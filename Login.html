@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <!------ Include the above in your HEAD tag ---------->
+<style>
+body {
+    font-family: "Lato", sans-serif;
+        background-color: aliceblue !important;
+
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+
+        margin-top: 20%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: aliceblue !important;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="sidenav">
+
+<img src="Picture3.png" width="100%" height="100%" alt="">
+
+      </div>
+      <div class="main">
+<div class="row"   style="margin-top: 10%">
+    <div class="col"></div>
+    <div class="col">
+<img src="Picture4.png"  alt="">
+
+    </div>
+    <div class="col"></div>
+</div>
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+
+         {{-- <div class="col-md-6 col-sm-12"> --}}
+
+            <div class="login-form   " width="100%" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; background-color: aliceblue !important; padding: 2vw; border-radius: 1vw;">
+
+
+
+               <form>
+
+                  <div class="form-group ">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password">
+                  </div>
+
+                  <br>
+                  <button type="submit" class="btn btn-black">Login</button>
+                  {{-- <button type="submit" class="btn btn-secondary">Register</button> --}}
+               </form>
+            </div>
+         {{-- </div> --}}
+</div>
+
+    <div class="col-3"></div>
+         </div>
+
+      </div>
+</body>
+</html>
