@@ -1,0 +1,104 @@
+body {
+    font-family: "Lato", sans-serif;
+        background-color: aliceblue !important;
+padding: 0% !important;
+margin: 0% !important;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+ 
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+    body{
+        padding: 0% !important;
+margin: 0% !important;
+    }
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+        body{
+        padding: 0% !important;
+margin: 0% !important;
+    }
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+        .main{
+        /* margin-left: 40%; */
+    }
+
+    .sidenav{
+        /* width: 40%; */
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+        body{
+        padding: 0% !important;
+margin: 0% !important;
+    }
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: aliceblue !important;
+    }
+
+    .register-form{
+        
+    }
+}
+
+
+.login-main-text{
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
